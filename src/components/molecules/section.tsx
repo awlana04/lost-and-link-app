@@ -12,7 +12,7 @@ type SectionProps = IconNamesType & {
 export default function Section(props: SectionProps) {
   return (
     <View
-      className={`w-64 h-16 pl-6 flex flex-row items-center rounded-tr-2xl rounded-br-2xl ${props.color === 'lightGreen' ? 'bg-lightGreen' : 'bg-darkGreen'}`}
+      className={`w-64 h-16 pl-6 flex flex-row my-2 items-center rounded-tr-2xl rounded-br-2xl ${props.color === 'lightGreen' ? 'bg-lightGreen' : 'bg-darkGreen'}`}
     >
       <Icon
         {...props}

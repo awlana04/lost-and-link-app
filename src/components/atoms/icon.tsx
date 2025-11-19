@@ -8,11 +8,11 @@ export default function Icon(props: IconType) {
       name={props.name}
       color={
         (props.color === 'black' && '#000000') ||
-        (props.color === 'green' && '##D4FFE5') ||
+        (props.color === 'green' && '#3DDB8F') ||
         (props.color === 'white' && '#FFFFFF') ||
         '#FFFFFF'
       }
-      size={props.size === 'small' ? 24 : 32}
+      size={props.size === 'small' ? 16 : 32}
     />
   );
 }
