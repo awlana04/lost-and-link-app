@@ -14,7 +14,12 @@ export default function HomeScreen() {
       </View>
       <ScrollView className='mb-44'>
         <View>
-          <Section color='darkGreen' name='frown' text='Perdidos' />
+          <Section
+            color='darkGreen'
+            name='frown'
+            iconDirection='left'
+            text='Perdidos'
+          />
           <View className='items-center'>
             <Card
               title='Planta'
@@ -29,7 +34,12 @@ export default function HomeScreen() {
           </View>
         </View>
         <View className='mt-6'>
-          <Section color='lightGreen' name='smile' text='Achados' />
+          <Section
+            color='lightGreen'
+            name='smile'
+            iconDirection='left'
+            text='Achados'
+          />
           <View className='items-center'>
             <Card
               title='Bolsa'

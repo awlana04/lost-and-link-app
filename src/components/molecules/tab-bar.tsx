@@ -1,7 +1,7 @@
 import { BottomTabBarProps } from '@react-navigation/bottom-tabs';
 import { PlatformPressable } from '@react-navigation/elements';
 import { useLinkBuilder } from '@react-navigation/native';
-import { TouchableOpacity, View } from 'react-native';
+import { View } from 'react-native';
 
 import Icon from '../atoms/icon';
 
@@ -9,7 +9,7 @@ export default function TabBar(props: BottomTabBarProps) {
   const { buildHref } = useLinkBuilder();
 
   return (
-    <View className='bg-lightGreen fixed h-36 rounded-t-2xl'>
+    <View className='bg-lightGreen fixed h-36 rounded-t-2xl justify-center items-center flex flex-row gap-20 pb-10'>
       {props.state.routes.map((route, index) => {
         const { options } = props.descriptors[route.key];
 
@@ -44,17 +44,35 @@ export default function TabBar(props: BottomTabBarProps) {
               onPress={onPress}
               onLongPress={onLongPress}
             >
-              <View className='flex flex-row gap-24 justify-center items-center mt-4'>
-                <TouchableOpacity>
-                  <Icon color='black' name='settings' size='large' />
-                </TouchableOpacity>
-                <TouchableOpacity className='w-16 h-16 -top-10 rounded-2xl bg-darkGreen items-center justify-center'>
-                  <Icon color='black' name='plus-circle' size='large' />
-                </TouchableOpacity>
-                <TouchableOpacity>
-                  <Icon color='black' name='image' size='large' />
-                </TouchableOpacity>
-              </View>
+              {index === 0 && (
+                <View>
+                  <Icon
+                    color={props.state.index === 0 ? 'green' : 'black'}
+                    name='search'
+                    size='large'
+                  />
+                </View>
+              )}
+
+              {index === 1 && (
+                <View className='w-16 h-16 -top-10 rounded-2xl bg-darkGreen items-center justify-center'>
+                  <Icon
+                    color={props.state.index === 1 ? 'white' : 'black'}
+                    name='plus-circle'
+                    size='large'
+                  />
+                </View>
+              )}
+
+              {index === 2 && (
+                <View>
+                  <Icon
+                    color={props.state.index === 2 ? 'green' : 'black'}
+                    name='settings'
+                    size='large'
+                  />
+                </View>
+              )}
             </PlatformPressable>
           </View>
         );
