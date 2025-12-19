@@ -1,22 +1,7 @@
+import { Feather } from '@expo/vector-icons';
+
 export type IconNamesType = {
-  name:
-    | 'search'
-    | 'frown'
-    | 'smile'
-    | 'plus-circle'
-    | 'settings'
-    | 'hash'
-    | 'image'
-    | 'map'
-    | 'plus'
-    | 'x'
-    | 'mail'
-    | 'key'
-    | 'user'
-    | 'credit-card'
-    | 'chevron-down'
-    | 'clipboard'
-    | 'log-in';
+  icon: keyof typeof Feather.glyphMap;
 };
 
 export type IconType = IconNamesType & {

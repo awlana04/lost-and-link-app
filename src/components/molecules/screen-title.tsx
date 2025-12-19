@@ -15,7 +15,7 @@ export default function ScreenTitle(props: ScreenTitlePropsType) {
 
         {props.hasIcon && (
           <TouchableOpacity>
-            <Icon color='black' name='x' size='large' />
+            <Icon color='black' icon='x' size='large' />
           </TouchableOpacity>
         )}
       </View>

@@ -24,7 +24,7 @@ export default function ViewItemScreen() {
 
           <View>
             <View className='flex flex-row'>
-              <Icon color='black' name='map' size='small' />
+              <Icon color='black' icon='map' size='small' />
               <Text className='text-black ml-2 text-sm'>Local:</Text>
             </View>
           </View>

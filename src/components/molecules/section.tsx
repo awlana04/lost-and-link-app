@@ -18,7 +18,7 @@ export default function Section(props: SectionProps) {
     >
       {props.iconDirection === 'left' && (
         <Icon
-          name={props.name}
+          icon={props.icon}
           color={props.color === 'darkGreen' ? 'white' : 'black'}
           size='large'
         />
@@ -30,7 +30,7 @@ export default function Section(props: SectionProps) {
       </Text>
       {props.iconDirection === 'right' && (
         <Icon
-          name={props.name}
+          icon={props.icon}
           color={props.color === 'darkGreen' ? 'white' : 'black'}
           size='large'
         />

@@ -16,7 +16,7 @@ export default function HomeScreen() {
         <View>
           <Section
             color='darkGreen'
-            name='frown'
+            icon='frown'
             iconDirection='left'
             text='Perdidos'
           />
@@ -36,7 +36,7 @@ export default function HomeScreen() {
         <View className='mt-6'>
           <Section
             color='lightGreen'
-            name='smile'
+            icon='smile'
             iconDirection='left'
             text='Achados'
           />

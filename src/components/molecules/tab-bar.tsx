@@ -48,7 +48,7 @@ export default function TabBar(props: BottomTabBarProps) {
                 <View>
                   <Icon
                     color={props.state.index === 0 ? 'green' : 'black'}
-                    name='search'
+                    icon='search'
                     size='large'
                   />
                 </View>
@@ -58,7 +58,7 @@ export default function TabBar(props: BottomTabBarProps) {
                 <View className='w-16 h-16 -top-10 rounded-2xl bg-darkGreen items-center justify-center'>
                   <Icon
                     color={props.state.index === 1 ? 'white' : 'black'}
-                    name='plus-circle'
+                    icon='plus-circle'
                     size='large'
                   />
                 </View>
@@ -68,7 +68,7 @@ export default function TabBar(props: BottomTabBarProps) {
                 <View>
                   <Icon
                     color={props.state.index === 2 ? 'green' : 'black'}
-                    name='settings'
+                    icon='settings'
                     size='large'
                   />
                 </View>

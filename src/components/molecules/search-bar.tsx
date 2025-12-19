@@ -6,7 +6,7 @@ export default function SearchBar() {
   return (
     <View className='w-96 h-12 rounded-2xl bg-lightGreen mt-12 my-6 justify-center'>
       <View className='ml-6 flex flex-row items-center'>
-        <Icon color='green' size='small' name='search' />
+        <Icon color='green' size='small' icon='search' />
         <Pressable>
           <Text className='font-light text-darkGreen text-small ml-4'>
             Pesquisar
