@@ -3,7 +3,7 @@ import { View } from 'react-native';
 
 import TabBar from '../components/molecules/tab-bar';
 
-export default function RootLayout() {
+export default function RootTab() {
   return (
     <View className='h-full'>
       <Tabs
